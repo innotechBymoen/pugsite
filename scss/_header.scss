@@ -1,0 +1,36 @@
+#page_header  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    min-height: 10vh;
+    width: 80%;
+
+    >img {
+        width: 30px;
+        height: 30px;
+        justify-self: end;
+    }
+
+    >nav {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1020px){
+    #page_header {
+        >nav {
+            display: block;
+            justify-self: end;
+            width: 175px;
+            display: grid;
+            place-items: center;
+            grid-template-columns: 1fr 1fr;
+            >a {
+                text-decoration: none;
+            }
+        }
+        >img {
+            display: none;
+        }
+    }
+}
